@@ -108,15 +108,6 @@ namespace VKMusicRipper
                 }
             }
         }
-
-        static CefSharp.Cookie ConvertCookieToCefSharpCookie(System.Net.CookieCollection cookies)
-        {
-            var convCookie = new CefSharp.Cookie();
-
-
-
-            return convCookie;
-        }
     }
 
     class TrackInfo
