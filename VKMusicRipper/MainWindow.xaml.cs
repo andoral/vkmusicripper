@@ -29,7 +29,6 @@ namespace VKMusicRipper
         private async void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
             await VK.Authorize(tbLogin.Text, tbPass.Text);
-            await VK.GetMusicList();
         }
     }
 }
