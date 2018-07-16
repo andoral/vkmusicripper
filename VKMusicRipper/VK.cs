@@ -22,10 +22,6 @@ namespace VKMusicRipper
                 handler.CookieContainer = new CookieContainer();
                 using (HttpClient client = new HttpClient(handler))
                 {
-                    //client.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate");
-                    //client.DefaultRequestHeaders.Add("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4");
-                    //client.DefaultRequestHeaders.Add("Cache-Control", "no-cache");
-                    //client.DefaultRequestHeaders.Add("Accept", "*/*");
                     client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36");
 
                     string data = await client.GetStringAsync("https://m.vk.com/login");
