@@ -82,7 +82,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Authorizer.cs" />
     <Compile Include="JsCaller.cs" />
+    <Compile Include="MusicFetcher.cs" />
     <Compile Include="TrackInfo.cs" />
     <Compile Include="VK.cs" />
     <Page Include="MainWindow.xaml">
